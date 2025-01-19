@@ -1,4 +1,4 @@
-#This is a middle link to demonstrate the whole functionality publically on Github. keys.py is gitignored
+#This is a middle link to demonstrate the whole functionality publically on Github. private_keys.py is gitignored
 
 import private_keys
 
