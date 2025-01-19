@@ -17,12 +17,9 @@ def connect_to_db():
     # connect to database
     try:
         conn = odbc.connect(connectionString)
-        print("Conn success: ", conn)
+        print("db_conn success: ", conn)
+        return conn
 
     except Exception as e:
-        print("Conn failed:", e)
-    finally:
-        if 'conn' in locals():
-            conn.close()
-
-connect_to_db()
+        print("db_conn failed:", e)
+        return None
